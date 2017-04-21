@@ -42,7 +42,7 @@
 							<th>Descrição</th>
 							<th>Valor Unitário</th>
 							<th>Quantidade</th>
-							<th>Disponibilidade</th>
+							<th>Valor Total</th>
 						</tr>
 					</thead>
 			
@@ -50,18 +50,22 @@
 						
 						<c:forEach items="${mbd.listaTabelaPedido}" var="cardp" >
 							<tr>
-							<td>${cardp.idCardapio}</td>
-							<td>${cardp.categoria}</td>
-							<td>${cardp.descricao}</td>
-							<td>
-								<fmt:formatNumber value="${cardp.valorUnitario}" type="currency"> </fmt:formatNumber>
-							</td>	
-							<td>${cardp.quantidade}</td>
-							<td>${cardp.disponibilidade}</td>
-						<tr/>
+								<td>${cardp.idCardapio}</td>
+								<td>${cardp.categoria}</td>
+								<td>${cardp.descricao}</td>
+								<td>${cardp.quantidade}</td>
+								<td>
+									<fmt:formatNumber value="${cardp.valorUnitario}" type="currency"> </fmt:formatNumber>
+								</td>
+								<td>
+								<fmt:formatNumber value="${cardp.quantidade * cardp.valorUnitario}" type="currency"> </fmt:formatNumber>
+							</td>
+							<tr/>
 						</c:forEach>
 
 				</tbody>
+				
+				
 				
 				</table>
 				

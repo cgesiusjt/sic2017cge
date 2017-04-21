@@ -23,7 +23,7 @@
 		<div class="col-md-12">
 		
 			<h3>Cadastro de Cardápio</h3>
-			<a href="homeCardapio.jsp"> <input type="submit" value="Voltar"/> </a> Para pagina inicial.
+			<a href="gerenciamento.jsp"> <input type="submit" value="Voltar"/> </a> Para pagina inicial.
 			<hr>
 			
 			<div class="col-md-4">

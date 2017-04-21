@@ -3,7 +3,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<jsp:useBean class="managdBeans.ManagdBeansCardapio" id="mb"></jsp:useBean>
+	<jsp:useBean class="managdBeans.ManagdBeansCardapio" id="mb"></jsp:useBean>
 
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -27,7 +27,7 @@
 	<div class="col-md-12">
 
 		<h3>Consulta de Cardápio</h3>
-		<a href="homeCardapio.jsp"> <input type="submit" value="Voltar" />
+		<a href="gerenciamento.jsp"> <input type="submit" value="Voltar" />
 		</a> Para página Inicial
 
 		<table class="table table-horver">
@@ -54,7 +54,7 @@
 							<fmt:formatNumber value="${c.valorUnitario}" type="currency"> </fmt:formatNumber>
 						</td>	
 						<td>${c.disponibilidade}</td>
-						
+					</tr>	
 				</c:forEach>
 
 			</tbody>
